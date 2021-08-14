@@ -1,0 +1,8 @@
+<drawables>
+	<drawable-list id="Dividers">
+      <shape type="rectangle" y="29%" height="1" color="Graphics.COLOR_ORANGE"/>  
+      <shape type="rectangle" y="73%" height="1" color="Graphics.COLOR_ORANGE"/>  
+      
+    </drawable-list>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+</drawables>

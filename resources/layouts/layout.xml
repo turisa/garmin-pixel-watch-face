@@ -1,0 +1,15 @@
+<layout id="WatchFace">
+
+	<drawable id="Dividers"/>
+	
+	<label id="HourDisplay" x="left" y="center" font="@Fonts.templo_fino" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <label id="ColonDisplay" x="center" y="center" font="@Fonts.templo_fino" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <label id="MinuteDisplay" x="right" y="center" font="@Fonts.templo_fino" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    
+    <label id="DateDisplay" x="left" y="top" font="@Fonts.templo_fino_small" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+	<label id="BatteryDisplay" x="right" y="bottom" font="@Fonts.templo_fino_small" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+	
+	<label id="HeartRateDisplay" x="left" y="bottom" font="@Fonts.templo_fino_small" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+	<label id="TemperatureDisplay" x="right" y="top" font="@Fonts.templo_fino_small" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+	
+</layout>
