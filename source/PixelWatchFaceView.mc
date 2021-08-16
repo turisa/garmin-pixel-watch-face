@@ -102,15 +102,17 @@ class PixelWatchFaceView extends WatchUi.WatchFace {
     // Sets the heart rate display.
     function setHeartRateDisplay() {
         var view = View.findDrawableById("HeartRateDisplay") as Text;
-        var heartRateSample;
-        var hrIterator = ActivityMonitor.getHeartRateHistory(null, true);
-        var sample = hrIterator.next();
-        if (null != sample && sample.heartRate != ActivityMonitor.INVALID_HR_SAMPLE) {
-            heartRateSample = sample.heartRate;
-        } else {
-            heartRateSample = "--";
+        var heartRate = Activity.getActivityInfo().currentHeartRate;
+        if (heartRate == null) {
+            var hrIterator = ActivityMonitor.getHeartRateHistory(null, true);
+            var sample = hrIterator.next();
+            if (sample != null && sample.heartRate != ActivityMonitor.INVALID_HR_SAMPLE) {
+                heartRate = sample.heartRate;
+            } else {
+                heartRate = "--";
+            }   
         }
-        var heartRateString = "HR " + heartRateSample;
+        var heartRateString = "HR " + heartRate;
         view.setText(heartRateString);
     }
 }
