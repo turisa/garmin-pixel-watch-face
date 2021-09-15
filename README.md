@@ -4,7 +4,7 @@ A simple watch face with military time that uses the Templo font by Apostrophic 
 
 Made for fun and as a learning experiment.
 
-<h2>Installation guide</h2>
+<h2>Usage</h2>
 
 The app is still in development, but it can be <a href="https://developer.garmin.com/connect-iq/connect-iq-basics/your-first-app">side loaded</a>!.
 
